@@ -61,6 +61,11 @@ main {
   margin-top: 30px;
 }
 
+figcaption {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+}
+
 article {
   margin-top: 30px;
   line-height: 1.58;

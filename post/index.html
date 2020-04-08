@@ -11,17 +11,57 @@
         <header>
             <div class="metabar">
                 <div class="left_container">
-                    <a href=""><img class="logo" src="../images/logo.svg"/></a>
+                    <a href="../home/index.html"><img class="logo" src="../images/logo.svg"/></a>
                 </div>
                 <div class="right_container">
-                    <a href=""><img src="../images/search.svg"/></a>
-                    <a href=""><img src="../images/bookmarks.svg"/></a>
-                    <a href=""><img src="../images/notifications.svg"/></a>
-                    <a href=""><img class="account" src="../images/account.svg"/></a>
+                    <a href="#"><img src="../images/search.svg"/></a>
+                    <a href="#"><img src="../images/bookmarks.svg"/></a>
+                    <a href="#"><img src="../images/notifications.svg"/></a>
+                    <a href="#"><img class="account" src="../images/account.svg"/></a>
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <h1>How JavaScript works: an overview of the engine, the runtime, and the call stack</h1>
+            <div class="author-info">
+                <img class="profile" src="../images/profile.png">
+                <div class="name_date">
+                    <span class="name">Tushar Kathuria</span>
+                    <span class="date">Dec 09 2019</span>
+                </div>
+                <div class="social_links">
+                    <a href="https://twitter.com/home" target="_blank"><img src="../images/twitter.png"/></a>
+                    <a href="https://linkedin.com/" target="_blank"><img src="../images/linkedin.png"/></a>
+                    <a class="facebook" href="https://facebook.com/" target="_blank"><img src="../images/facebook.png"/></a>
+                </div>
+            </div>
+
+            <img class="thumbnail" src="https://picsum.photos/720/450">
+            <article>
+                <h3>Overview</h3>
+                <p>
+                    As JavaScript is getting more and more popular, teams are leveraging its support on many levels in their stack - front-end, back-end, hybrid apps, embedded devices and much more.
+                    This post is meant to be the first in a series aimed at digging deeper into JavaScript and how it actually works: we thought that by knowing the building blocks of JavaScript and how they come to play together you’ll be able to write better code and apps. We’ll also share some rules of thumb we use when building SessionStack, a lightweight JavaScript application that has to be robust and highly-performant in order to stay competitive.
+                    As shown in the GitHut stats, JavaScript is at the top in terms of Active Repositories and Total Pushes in GitHub. It doesn’t lag behind much in the other categories either.
+                </p>    
+                
+                <h3>The Javascript Engine</h3>
+                <p>
+                    A popular example of a JavaScript Engine is Google’s V8 engine. The V8 engine is used inside Chrome and Node.js for example. Two main components of engine are memory heap and call stack. 
+                    Memory heap is where the memory allocation happens. Call stack is where your stack frames are as your code executes.
+                </p>
+
+                <h3>The Runtime</h3>
+                <p>
+                    There are APIs in the browser that have been used by almost any JavaScript developer out there (e.g. “setTimeout”). Those APIs, however, are not provided by the Engine.
+                    So, where are they coming from?
+                    It turns out that the reality is a bit more complicated.
+                    So, we have the Engine but there is actually a lot more. We have those things called Web APIs which are provided by browsers, like the DOM, AJAX, setTimeout and much more.
+                    And then, we have the so popular event loop and the callback queue.
+                </p>
+
+            </article>
+        </main>
         <footer>
             <div class="footer-content">
                 <a href="">Privacy</a>

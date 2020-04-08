@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  width: 100%;
+  width: 95%;
   max-width: 720px;
   margin: 4vh auto 0 auto;
   flex: 1;
